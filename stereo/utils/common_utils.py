@@ -140,7 +140,7 @@ def freeze_bn(module):
 
 
 def load_params_from_file(model, filename, device, dist_mode, logger, strict=True):
-    checkpoint = torch.load(filename, map_location=device)
+    checkpoint = torch.load(filename, map_location=device, weights_only=False)
     pretrained_state_dict = checkpoint['model_state']
     tmp_model = model.module if dist_mode else model
     state_dict = tmp_model.state_dict()

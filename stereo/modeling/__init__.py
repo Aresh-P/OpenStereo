@@ -24,10 +24,10 @@ except:
 '''
 
 # If you want to train/eval NMRF-Stereo, you need to build deformable attention and superpixel-guided disparity downsample operator: 'cd stereo/modeling/models/nmrf/ops && sh make.sh && cd ..'
-try:
-    from .models.nmrf.trainer import Trainer as NMRFTrainer
-except:
-    raise ValueError("If you want to train/eval NMRF-Stereo, you need to build deformable attention and superpixel-guided disparity downsample operator: 'cd stereo/modeling/models/nmrf/ops && sh make.sh && cd ..'")
+# try:
+#     from .models.nmrf.trainer import Trainer as NMRFTrainer
+# except:
+#     raise ValueError("If you want to train/eval NMRF-Stereo, you need to build deformable attention and superpixel-guided disparity downsample operator: 'cd stereo/modeling/models/nmrf/ops && sh make.sh && cd ..'")
 __all__ = {
     'STTR': STTRTrainer,
     'PSMNet': PSMNetTrainer,
@@ -45,7 +45,7 @@ __all__ = {
     'StereoBaseGRU': StereoBaseGRUTrainer,
     # 'FoundationStereo': FoundationStereoTrainer,
     # 'IInet': IINetTrainer,
-    'NMRF': NMRFTrainer
+    # 'NMRF': NMRFTrainer
 }
 
 

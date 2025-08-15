@@ -1,3 +1,8 @@
-.idea
-**__pycache__**
-**.DS_Store**
+**/__pycache__/
+**/.DS_Store/
+output/
+output_test/
+.gitignore
+ov_depths/
+rect/
+data/
